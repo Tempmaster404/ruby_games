@@ -17,5 +17,5 @@ if x != y
   count.each_with_index { |c, i| values.push i+1 if c >= 0 }  
   p values.first * min_value
 else
-  p n * x / 2
+  p (n * x / 2) + x
 end

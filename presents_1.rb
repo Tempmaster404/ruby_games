@@ -12,11 +12,7 @@ class Present
     arr = [@x, @y, @z]
     all_variants = (2..arr.count).flat_map { |size| arr.combination(size).to_a }
     all_variants.each { |v| variants.push v if v.sum <= w }
-    puts "Result: #{variants.count}"
+    p "Result: #{variants.count}"
   end
 
 end
-
-# Checking according to the example
-present = Present.new(10, 25, 15)
-present.count_combinations(40)

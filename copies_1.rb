@@ -19,13 +19,10 @@ class SecretaryTask
       end
 
       count.each_with_index { |c, i| values.push i+1 if c >= 0 }  
-      p values.first * min_value
+      p "Result: #{values.first * min_value}"
     else
-      p n * x / 2
+      p "Result: #{ (@n * x / 2) + x }"
     end
   end
-end
 
-# Checking according to the example
-secretary_task = SecretaryTask.new(5)
-secretary_task.counts_minimal_time(1, 2)
+end
